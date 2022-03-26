@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>electrON - ელექტროობა</title>
+
+	<meta property="og:title" content="electrON - ელექტროობა" />
+	<meta property="og:description" content="ელექტრონიკის გაკვეთილები" />
+	<meta property="og:url" content="https://dshubitidze.github.io/electron" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="https://dshubitidze.github.io/electron/upload/electron.jpg" />
+	<meta property="og:site_name" content="electrON - ელექტროობა" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="sarchevi" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">1. დენი და ძაბვა</a>
+  <a href="#">2. მთავარი პრინციპები</a>
+  <a href="#">3. კვების წყარო</a>
+  <a href="#">4. ომის კანონი</a>
+  <a href="#">5. მცირე შეჯამება</a>
+  <a href="#">6 .კონდენსატორი</a>
+  <a href="#">7. ინდუქტივობა</a>
+  <a href="#">8. დიოდი</a>
+  <a href="#">9. ტრანზისტორი</a>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; სარჩევი</span>
+  
+  <h2> სათაური </h2>
+  <p> პოსტი და მისი შიგთავსი უნდა იყოს აქ.. </p>
+
+<script>
+function openNav() {
+  document.getElementById("sarchevi").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("sarchevi").style.width = "0";
+}
+</script>
+   
+</body>
+</html> 
