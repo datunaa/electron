@@ -1,89 +1,153 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8" />
-<title>electrON - ელექტროობა</title>
+  <head>
+    <meta charset="UTF-8" />
+    <title>electrON - ელექტროობა</title>
+    <meta property="og:title" content="electrON - ელექტროობა" />
+    <meta property="og:description" content="ელექტრონიკის გაკვეთილები" />
+    <meta property="og:url" content="https://dshubitidze.github.io/electron" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://dshubitidze.github.io/electron/upload/electron.jpg" />
+    <meta property="og:site_name" content="electrON - ელექტროობა" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        font-family: "Lato", sans-serif;
+      }
 
-	<meta property="og:title" content="electrON - ელექტროობა" />
-	<meta property="og:description" content="ელექტრონიკის გაკვეთილები" />
-	<meta property="og:url" content="https://dshubitidze.github.io/electron" />
-	<meta property="og:type" content="website" />
-	<meta property="og:image" content="https://dshubitidze.github.io/electron/upload/electron.jpg" />
-	<meta property="og:site_name" content="electrON - ელექტროობა" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: "Lato", sans-serif;
-}
+      .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
 
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
 
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
 
-.sidenav a:hover {
-  color: #f1f1f1;
-}
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
 
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
+      @media screen and (max-height: 450px) {
+        .sidenav {
+          padding-top: 15px;
+        }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-</style>
-</head>
-<body>
+        .sidenav a {
+          font-size: 18px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="sarchevi" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">1. დენი და ძაბვა</a>
+      <a href="#">2. მთავარი პრინციპები</a>
+      <a href="#">3. კვების წყარო</a>
+      <a href="#">4. ომის კანონი</a>
+      <a href="#">5. მცირე შეჯამება</a>
+      <a href="#">6 .კონდენსატორი</a>
+      <a href="#">7. ინდუქტივობა</a>
+      <a href="#">8. დიოდი</a>
+      <a href="#">9. ტრანზისტორი</a>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; სარჩევი</span>
+    <br />
+    <br />
+    <h2> დენი და ძაბვა </h2>
+    <br />
+    <!-- პოსტი -->
+    <div class="post-body entry-content" id="post-body-7984169588719525556" itemprop="description articleBody">
+      <div style="text-align: justify;">&nbsp; &nbsp; &nbsp;&nbsp;ამ გვერდზე იქნება განმარტებული ელეტროობის ორი ყველაზე მთავარი ცნება -&nbsp; <b>
+          <span style="color: #351c75;">დენი</span>
+        </b>&nbsp;და&nbsp; <b>
+          <span style="color: #351c75;">ძაბვა</span>
+        </b>. </div>
+      <div style="text-align: right;">
+        <a href="https://dshubitidze.github.io/electron/upload/anim3_wire_current.gif" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;">
+          <img border="0" src="https://dshubitidze.github.io/electron/upload/anim3_wire_current.gif">
+        </a>
+      </div>
+      <div style="text-align: justify;">&nbsp; &nbsp;უმეტესობისათვის დენი ეს არის რაღაც რაც მიედინება ლითონის მავთულში. რეალურად &nbsp;დენი არის ელემენტარული ნაწილაკების - ელექტრონების მოძრაობა. თუმცა მოდით უფრო მარტივი მოდელი შემოვიღოთ რომ ყველასთვის გასაგები იყოს. დავუშვათ რომ მავთული ეს არის ჩვეულებრივი მილი, ხოლო დენი არის მასში გამავალი წყალი.&nbsp;</div>
+      <div style="text-align: justify;">
+        <br>
+      </div>
+      <div style="text-align: left;">
+        <br>
+      </div>
+      <div style="text-align: justify;">
+        <a href="https://dshubitidze.github.io/electron/upload/anim3_manometer1_small.gif" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;">
+          <img border="0" height="143" src="https://dshubitidze.github.io/electron/upload/anim3_manometer1_small.gif" width="320">
+        </a>&nbsp; იმისათვის მილში წყალმა იმოძრაოს, საჭიროა წნევა. რაც მეტია წნევა, მით უფრო ჩქარა მოძრაობს წყალი მილში.&nbsp; <i>
+          <span style="color: #351c75;">განმარტება:</span>
+        </i>&nbsp; <i style="color: #351c75;">წნევას დავარქვათ&nbsp;</i>
+        <b style="color: #351c75; font-style: italic;">ძაბვა&nbsp;</b>
+        <i style="color: #351c75;">(აღნიშვნა U)</i>.
+      </div>
+      <div style="text-align: justify;">&nbsp;&nbsp; <span style="color: #351c75;">
+          <i>ძაბვა იზომება&nbsp; <b>ვოლტებში</b>
+          </i>
+        </span>
+        <i>
+          <span style="color: #351c75;">, ხოლო&nbsp;მოწყობილობას რომელიც ზომავს ძაბვას დავარქვათ&nbsp; <b>ვოლტმეტრი</b>
+          </span>
+        </i>&nbsp;(მანომეტრის ანალოგი).
+      </div>
+      <div style="text-align: justify;">
+        <br>
+      </div>
+      <div class="separator" style="clear: both; text-align: center;"></div>
+      <div style="text-align: justify;">
+        <a href="https://dshubitidze.github.io/electron/upload/anim3_manometer2_small.gif" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;">
+          <img border="0" height="180" src="https://dshubitidze.github.io/electron/upload/anim3_manometer2_small.gif" width="320">
+        </a>&nbsp; &nbsp; &nbsp; &nbsp; ეხლა გავზომოთ მილში გამავალი წყლის რაოდენობა. ამისათვის მილზე დავაყენოთ მრიცხველი რომელიც დაითვლის გამავალი წყლის რაოდენობას. ეხლა შეგვიძლია დავითვალოთ ერთ წამში მილში გასული წყლის რაოდენობა, რაც ასახავს წყლის დინების სიჩქარეს. ანუ დავუშვათ 1 წამში მილში გაიარა 5 ლიტრმა წყალმა, მაშინ ვამბობთ რომ დინების სიჩქარეა 5 ლიტრი/წამში. დავარქვათ ამ პარამეტრს&nbsp; <b style="color: #351c75;">დენი</b>. <br>
+        <div class="separator" style="clear: both; text-align: center;">
+          <a href="https://dshubitidze.github.io/electron/upload/anim3_speedmeter_manometer_small.gif" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;">
+            <img border="0" height="171" src="https://dshubitidze.github.io/electron/upload/anim3_speedmeter_manometer_small.gif" width="320">
+          </a>
+        </div>
+        <span style="color: #351c75; font-style: italic;">განმარტება: წყლის დინების სიჩქარეს დავარქვათ&nbsp; <b>დენის ძალა</b>&nbsp;(შემდგომში&nbsp; <b>დენი,&nbsp;</b>აღნიშვნა I) </span>.&nbsp; <i style="color: #351c75;">დენი იზომება&nbsp;</i>
+        <b style="color: #351c75; font-style: italic;">ამპერებში</b>
+        <i style="color: #351c75;">, ხოლო მოწყობილობას რომელიც ზომავს დენს დავარქვათ&nbsp;</i>
+        <b style="color: #351c75; font-style: italic;">ამპერმეტრი</b>
+        <i style="color: #351c75;">.</i>&nbsp;სურათზე ნაჩვენებია ამპერმეტრი რომელიც ზომავს წყლის დინების სიჩქარეს. მიაქციეთ ყურადღება რომ ამპერმეტრი რომ მიუერთდეს მილს, ამისათვის საჭიროა მილი გაიჭრას და შუაში ჩაჯდეს იგი, რათა მან გაზომოს მასში გამავალი წყლის რაოდენობა და შესაბამისად დაითვალოს სიჩქარე ანუ დენი. ასეთ ჩართვას ეწოდება&nbsp; <i>
+          <span style="color: #351c75;">მიმდევრობითი ჩართვა</span>
+        </i>. <br>
+        <br> &nbsp; როცა მავთულს ვადარებთ მილს, ერთი მთავარი დაშვება უნდა გავაკეთოთ, თუ ჩვეულებრივ მილს გადავჭრით, იქიდან წყალი გადმოიღვრება, მაგრამ წარმოვიდგინოთ რომ <b>ჩვენი მილები განსაკუთრებულია, მათი გადაჭრის დროს ბოლოები თავისით შედუღდება და იკეტება, და შესაბამისად ასე გადაჭრილი მილიდან წყალი არ გადმოიღვრება. </b>ზუსტად ანალოგიურად, გაწყვეტილი მავთულიდან დენი ვერ "გადმოიღვრება".&nbsp;
+      </div>
+      <div style="clear: both;"></div>
+    </div>
+    <!-- /პოსტი -->
+    <script>
+      function openNav() {
+        document.getElementById("sarchevi").style.width = "250px";
+      }
 
-<div id="sarchevi" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">1. დენი და ძაბვა</a>
-  <a href="#">2. მთავარი პრინციპები</a>
-  <a href="#">3. კვების წყარო</a>
-  <a href="#">4. ომის კანონი</a>
-  <a href="#">5. მცირე შეჯამება</a>
-  <a href="#">6 .კონდენსატორი</a>
-  <a href="#">7. ინდუქტივობა</a>
-  <a href="#">8. დიოდი</a>
-  <a href="#">9. ტრანზისტორი</a>
-</div>
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; სარჩევი</span>
-  
-  <h2> სათაური </h2>
-  <p> პოსტი და მისი შიგთავსი უნდა იყოს აქ.. </p>
-
-<script>
-function openNav() {
-  document.getElementById("sarchevi").style.width = "250px";
-}
-
-function closeNav() {
-  document.getElementById("sarchevi").style.width = "0";
-}
-</script>
-   
-</body>
-</html> 
+      function closeNav() {
+        document.getElementById("sarchevi").style.width = "0";
+      }
+    </script>
+  </body>
+</html>
