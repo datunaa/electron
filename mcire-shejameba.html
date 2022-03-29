@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>electrON - მცირე შეჯამება</title>
+    <meta property="og:title" content="electrON - მცირე შეჯამება" />
+    <meta property="og:description" content="ელექტრონიკის გაკვეთილები" />
+    <meta property="og:url" content="https://dshubitidze.github.io/electron" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://dshubitidze.github.io/electron/upload/electron.jpg" />
+    <meta property="og:site_name" content="electrON - მცირე შეჯამება" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        font-family: "Lato", sans-serif;
+      }
+
+      .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+
+      @media screen and (max-height: 450px) {
+        .sidenav {
+          padding-top: 15px;
+        }
+
+        .sidenav a {
+          font-size: 18px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="sarchevi" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="https://dshubitidze.github.io/electron/index.html">1. დენი და ძაბვა</a>
+      <a href="https://dshubitidze.github.io/electron/mtavari-principi.html">2. მთავარი პრინციპები</a>
+      <a href="https://dshubitidze.github.io/electron/kvebis-wyaro.html">3. კვების წყარო</a>
+      <a href="https://dshubitidze.github.io/electron/omis-kanoni.html">4. ომის კანონი</a>
+      <a href="https://dshubitidze.github.io/electron/mcire-shejameba.html">5. მცირე შეჯამება</a>
+      <a href="https://dshubitidze.github.io/electron/kondensatori.html">6 .კონდენსატორი</a>
+      <a href="https://dshubitidze.github.io/electron/induqtivoba.html">7. ინდუქტივობა</a>
+      <a href="https://dshubitidze.github.io/electron/diodi.html">8. დიოდი</a>
+      <a href="https://dshubitidze.github.io/electron/tranzistori.html">9. ტრანზისტორი</a>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; სარჩევი</span>
+    <br />
+    <br />
+    <h2> მცირე შეჯამება </h2>
+    <br />
+    <!-- პოსტი -->
+    
+    &nbsp; &nbsp; &nbsp;გავაკეთოთ მცირე შეჯამება, ვიცით უკვე ომის კანონი და რეზისტორის მუშაობის პრინციპი, დავხაზოთ ყველაზე მარტივი სქემა. ერთი კვების წყაროთი და ერთი რეზისტორით. <br>
+  <div class="separator" style="clear: both; text-align: center;">
+    <a href="https://dshubitidze.github.io/electron/upload/circuit1.GIF" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;">
+      <img border="0" src="https://dshubitidze.github.io/electron/upload/circuit1.GIF">
+    </a>
+  </div>
+  <div style="text-align: justify;">&nbsp; &nbsp; ამ სქემაზე ჩვენ ვხედავთ 12 ვოლტიან კვების წყაროს და 100 ომიან რეზისტორს. წინა გვერდიდან ვიცით ომის კანონით როგორ გამოითვლება რეზისტორში გავალი დენის ძალა I = U / R = 12 / 100 = 0.12 A (ამპერი). ზოგჯერ უფრო მოხერხებულია დენის გასაზომად გამოვიყენოთ <span style="color: #351c75; font-style: italic;">
+      <b>მილიამპერი &nbsp;</b>(აღინიშნება <b>ma</b>)რომელიც არის ამპერის მეათასედი ნაწილი, </span>ანუ 0.12 A = 120 ma. </div>
+  <br>
+  <br>
+  <div class="separator" style="clear: both; text-align: center;">
+    <a href="https://dshubitidze.github.io/electron/upload/circuit2.GIF" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;">
+      <img border="0" src="https://dshubitidze.github.io/electron/upload/circuit2.GIF">
+    </a>
+  </div>
+  <div style="text-align: justify;">&nbsp; &nbsp;მოდით ეხლა დავამატოთ კიდე ერთი რეზისტორი აი ასე როგორც სურათზეა, ასეთ ჩართვას ქვია <span style="color: #351c75;">
+      <b>მიმდევრობით ჩართვა</b>
+    </span>. თუ გავიხსენებთ მილის და წყლის მოდელს, მაშინ ლოგიკურია ვიფიქროთ რომ ეს ორი წინაღობა, ანუ მილის დავიწროვება 2 ადგილას, შეაფერხებს წყლის მოძრაობას ორჯერ მეტჯერ ვიდრე წინა მაგალითში. ანუ დენის ძალა შემცირდება ორჯერ, გახდება 60 მა, ეს ნიშნავს რომ ეს ორი რეზისტორი მოქმედებს ისე როგორც ერთი რეზისტორი 200 ომი წინააღობით (12/200=0.060=60მა). <span style="color: #999999; font-size: xx-small;"> მეორეს მხრივ ჩვენ შეგვიძლია მათემატიკურად გამოვიყვანოთ ამ ორი წინაღობის საერთო წინაღობა ომის კანონზე დაყრდნობით. &nbsp;დავწეროთ ომის კანონი თითოეული რეზისტორისთვის : I1 = U1 / R1 , I2 = U2 / R2 . ახლა უნდა დავეყრდნოთ იმ პრინციპს რომ წყლის ნაკადი რომელიც შედის R1 მილში, ასევე გაივლის R2 &nbsp;მილში, ზუსტად იგივე სიჩქარით რაგდან წყალი არსად არ იღვრება და იკარგება. ესე იგი R1 და R2 გამავალი დენის ძალა ტოლია :</span>
+  </div>
+  <div style="text-align: justify;">
+    <span style="color: #999999; font-size: xx-small;">I1 = I2 = I = U1 / R1 = U2 / R2 . ელხა ეს 2 რეზისტორი ჩავანაცვლოთ ერთი ვირტუალური რეზისტორით, წინააღობით R, მაშინ მისთვისაც უნდა იმუშაოს ომის კანონმა I = U / R . აქ I უნდა იყოს იგივე რაც წინა ფორმულაში, რადგან როგორც ვთქვით შემავალი წყალი არსად იკარგება, ხოლო U უნდა იყოს U1 და U2 ჯამი. რატომ? იმიტომ რომ თითოეულ რეზისტორიზე ძაბვა ეს არის წნევების სხვაობა შესასვლელზე და გამოსავლელზე, ამავე დროს პირველი რეზისტორის გამოსასვლელზე წნევა უდრის მეორე რეზისტორის შესავლელზე წნევას. ამიტომ პირველი რეზისტორის შესასვლელის და მეორეს გამოსავლელის წნევების სხვაობა იქნება თითოეულზე წნევების სხვაობების ანუ ძაბვების ჯამი. ესე იგი : R = U / I = ( U1 + U2 ) / I = ( R1 x I + R2 x I ) / I = R1 + R2.</span>
+  </div>
+  <div style="text-align: justify;">
+    <span style="color: #351c75;">
+      <b>მიმდევრობით ჩართვის დროს წინაღობები იკრიბება R = R1 + R2</b>
+    </span>, ანუ ორი რეზისტორი მიმდევრობით მუშაობს ისევე როგორც ერთი რომელსაც აქვს მათი ჯამური წინაღობა.
+  </div>
+  <div style="text-align: justify;">
+    <br>
+  </div>
+  <div class="separator" style="clear: both; text-align: center;">
+    <a href="https://dshubitidze.github.io/electron/upload/circuit3.GIF" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;">
+      <img border="0" src="https://dshubitidze.github.io/electron/upload/circuit3.GIF">
+    </a>
+  </div>
+  <div style="text-align: justify;">&nbsp; &nbsp; &nbsp;ამ ნახატზე კი გამოსახულია <b>
+      <span style="color: #351c75;">პარალელური ჩართვა</span>
+    </b>. რა მოხდება თუ წყალს გავატარებთ ორ წვრილ მილში პარალელურად? ეს ორი მილი ერთად გაატარებს ორჯერ მეტ წყალს ვიდრე ერთი. ესე იგი დენის ძალა ამ შეთხვევაში იქნება 240ma. ესე იგი ეს ორი რეზისტორი მუშაობს როგორც ერთი რეზისტორი წინაღობით 50 ომი (12/50=0.24=240ma). <span style="color: #999999; font-size: xx-small;">ამ შემთხვევაშიც ვიწყებთ ომის კანონით თითოეული რეზისტორისთვის, იგი იგივე იქნება როგორც წინა მაგალითში. ოღონდ ეხლა ორივე რეზისტორზე ერთი და იგივე ძაბვა იქნება U = U1 = U2. რატო? დაუკვირდით ჩართვის სქემა, ორივე რეზოსტორის შესასვლელიც და გამოსასვლელით შეერთებულია მსხვილი მილით ერთმანეთთან, ეს ნიშნავს რომ მათზე წნევები იქნება ერთნაერი, შესაბამისად წნევების სხვაობა (ძაბვება) მათზე იქნება ერთი და იგივე. მაგრამ როგორი იქნება ორივე რზისტორში გამავალი დენი თუ ერთში გადის I1 და მეორეში I2? ორივეში ერთად გავა I = I1 + I2, იმიტომ რომ მილებში გამავალი წყალი იკრიბება მათი გადაერთების ადგილას. ესე იგი:</span>
+  </div>
+  <div style="text-align: justify;">
+    <span style="color: #999999; font-size: xx-small;">R = U / I = U / ( I1 + I2 ) = U / ( U / R1 + U / R2 ) = 1 / ( 1 / R1 + 1 / R2 ) = R1 x R2 / ( R1 + R2 ). თუ R1 = R2 = Ra, მაშინ R = Ra / 2.</span>
+  </div>
+  <div style="text-align: justify;">
+    <b>
+      <span style="color: #351c75;">პარალელური ჩართვის დროს საერთო წინაღობა ითვლება ფორმულით:</span>
+    </b>
+  </div>
+  <div style="text-align: justify;">
+    <b>
+      <span style="color: #351c75;">R = R1 x R2 / ( R1 + R2 ) , თუ პარალელურად ჩართულია 2 ტოლი წინაღობა, მაშინ საერთო წინაღობა 2-ჯერ ნაკლებია.</span>
+    </b>
+  </div>
+  <div style="text-align: justify;">
+    <b>
+      <span style="color: #351c75;">
+        <br>
+      </span>
+    </b>
+  </div>
+  <div style="text-align: justify;">
+    <span style="color: #351c75; font-weight: bold;">&nbsp; &nbsp; &nbsp; </span>ცხადია შეიძლება უამრავი სხვა ტიპის ჩართვა მაგრამ ნებისმიერი მათგანი შეგვიძლია დავიყვანოთ პარალელური და მიმდევრობითი ჩართვების კომბინაციებზე და ისე დავითვალოთ საერთო წინაღობა. რეზისტორიბის ჩართვის როგორი სქემაც არ უნდა იყოს, უნდა გამოვიყენოთ ომის კანონი წყლის მილების ანალოგია რომ ინტუციურად მივხვდეთ როგორ დავითვალოთ მათი მოქმედების ეფექტი.
+  </div>
+    
+    <!-- /პოსტი -->
+    <script>
+      function openNav() {
+        document.getElementById("sarchevi").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("sarchevi").style.width = "0";
+      }
+    </script>
+  </body>
+</html>
