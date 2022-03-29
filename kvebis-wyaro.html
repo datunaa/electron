@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>electrON - კვების წყარო</title>
+    <meta property="og:title" content="electrON - კვების წყარო" />
+    <meta property="og:description" content="ელექტრონიკის გაკვეთილები" />
+    <meta property="og:url" content="https://dshubitidze.github.io/electron" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://dshubitidze.github.io/electron/upload/electron.jpg" />
+    <meta property="og:site_name" content="electrON - კვების წყარო" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        font-family: "Lato", sans-serif;
+      }
+
+      .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+
+      @media screen and (max-height: 450px) {
+        .sidenav {
+          padding-top: 15px;
+        }
+
+        .sidenav a {
+          font-size: 18px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="sarchevi" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="https://dshubitidze.github.io/electron/index.html">1. დენი და ძაბვა</a>
+      <a href="https://dshubitidze.github.io/electron/mtavari-principi.html">2. მთავარი პრინციპები</a>
+      <a href="https://dshubitidze.github.io/electron/kvebis-wyaro.html">3. კვების წყარო</a>
+      <a href="https://dshubitidze.github.io/electron/omis-kanoni.html">4. ომის კანონი</a>
+      <a href="https://dshubitidze.github.io/electron/mcire-shejameba.html">5. მცირე შეჯამება</a>
+      <a href="https://dshubitidze.github.io/electron/kondensatori.html">6 .კონდენსატორი</a>
+      <a href="https://dshubitidze.github.io/electron/induqtivoba.html">7. ინდუქტივობა</a>
+      <a href="https://dshubitidze.github.io/electron/diodi.html">8. დიოდი</a>
+      <a href="https://dshubitidze.github.io/electron/tranzistori.html">9. ტრანზისტორი</a>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; სარჩევი</span>
+    <br />
+    <br />
+    <h2> კვების წყარო </h2>
+    <br />
+    <!-- პოსტი -->
+  
+  <div style="text-align: justify;">
+    <br> &nbsp; &nbsp; &nbsp; როგორც უკვე აღვნიშნეთ, წყალმა რომ იმოძრაოს მილებში, საჭიროა წნევა. საჭიროა რაიმე მოწყობილობა რომელიც შექმნის ამ წნევას. ასეთ მოწყობილობას ეწოდება&nbsp; <b style="color: #351c75;">დენის (კვების) წყარო</b>. <br>
+    <a href="https://dshubitidze.github.io/electron/upload/power_source.gif" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;">
+      <img border="0" height="244" src="https://dshubitidze.github.io/electron/upload/power_source.gif" width="320">
+    </a>მაგალითის სახით წარმოვიდგინოთ სურათზე ნაჩვენები წყალსაქაჩი მექანიზმი. მასში შედის წყალი და ზუსტად იგივე რაოდენობით გამოდის ოღონდ უკვე მომატებული წნევით ანუ ძაბვით. გამოსასვლელზე წყლის წნევა მაღალია და აღნიშნავენ "+"-ით ( <i>
+      <span style="color: #351c75;">დადებითი პოტენციალი</span>
+    </i>), ხოლო შესასვლელზე დაბალი წნევაა და აღნიჩნავენ "-"-ით ( <i>
+      <span style="color: #351c75;">უარყოფითი პოტენციალი</span>
+    </i>). წყალი მოძრაობს დადებითი პოტენციალიდან (მაღალი წნევიდან) უარყოფითი პოტენციალისკენ (დაბალი წნევისკენ).&nbsp; <span style="font-size: xx-small;">
+      <span style="color: #999999;">სინამდვილეში ელექტრონები მოძრაობენ პირიქით, უარყოფითი პოტენციალიდან დადებითისკენ, იმიტომ რომ ელექტორნი უარყოფითი მუხტის მქონე ნაწილაკია, მაგრამ როდესაც ელექტროობა აღმოაჩინეს მაშინ არავინ იცოდა ელექტრონის არსებობის შესახებ, ამიტომ შემორჩა ეს არასწორი განმარტება</span>.&nbsp; </span>თუ დააკვირდებით, მიხვდებით რომ კვების წყაროს გამოსასვლელებზე პოტენციალთა სხვაობა (ანუ წნევების სხვაობა) დამოკიდებულია წყალსაქაჩი მექანიზმის სიმაღლეზე, რაც უფრო მაღლა ადის წყალი, მით უფრო მეტი წნევა იქმნება და მით უფრო მეტი ძაბვა იქნება გამოსასვლელზე, ეს განსაზღრვავს კვების წყაროს ძაბვას. მაგრამ წყალსაქაჩის სიმაღლეზე არაა დამოკიდებული ის თუ რამდენი წყალი შეუძლია გადაქაჩოს მან, ეს დამოკიდებულია მისი ელევატორის ბრუნვის სიჩქარეზე და ასევე ელევატორის თასების სიდიდეზე. ანუ ყველა კვების წყაროს ძაბვის გარდა გააჩნია კიდე ერთი მახასიათებელი, რომელზეც დამოკიდებულია გადაქაჩული წყლის მოცულობა და შესაბამისად დინება (დენი ძალა). თუ ჩვენ წყალსაქაჩის გამოსასვლელს პირდაპირ მივაერთეთ შესასვლელზე, მაშინ ამ სისტემაში გამავალი წყლის სიჩქარე (დენის ძალა) იქნება სწორედ ეს მახასიათებელი. <span style="color: #999999;">&nbsp; <span style="font-size: xx-small;">თუმცა მომავალში ვნახავთ რომ კვების წყაროს მახასიათებელებში ამ მაქსიმალური დენის მაგივრად იწერება ე.წ.&nbsp; <i>შიდა წინააღობა</i>&nbsp;(მომავალში განვიხილავთ) </span>
+    </span>.
+  </div>
+  <div style="text-align: left;">
+    <a href="https://dshubitidze.github.io/electron/upload/Cell_Symbol.png" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;">
+      <img border="0" height="184" src="https://dshubitidze.github.io/electron/upload/Cell_Symbol.png" width="200">
+    </a>&nbsp; &nbsp; კვების წყარო სქემებზე აღინიშნება შემდეგნაერად
+  </div>
+  
+    <!-- /პოსტი -->
+    <script>
+      function openNav() {
+        document.getElementById("sarchevi").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("sarchevi").style.width = "0";
+      }
+    </script>
+  </body>
+</html>
