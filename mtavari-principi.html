@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>electrON - ელექტროობა</title>
+    <meta property="og:title" content="electrON - ელექტროობა" />
+    <meta property="og:description" content="ელექტრონიკის გაკვეთილები" />
+    <meta property="og:url" content="https://dshubitidze.github.io/electron" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://dshubitidze.github.io/electron/upload/electron.jpg" />
+    <meta property="og:site_name" content="electrON - ელექტროობა" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        font-family: "Lato", sans-serif;
+      }
+
+      .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+
+      @media screen and (max-height: 450px) {
+        .sidenav {
+          padding-top: 15px;
+        }
+
+        .sidenav a {
+          font-size: 18px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="sarchevi" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="https://dshubitidze.github.io/electron/index.html">1. დენი და ძაბვა</a>
+      <a href="https://dshubitidze.github.io/electron/mtavari-principi.html">2. მთავარი პრინციპები</a>
+      <a href="https://dshubitidze.github.io/electron/kvebis-wyaro.html">3. კვების წყარო</a>
+      <a href="https://dshubitidze.github.io/electron/omis-kanoni.html">4. ომის კანონი</a>
+      <a href="https://dshubitidze.github.io/electron/mcire-shejameba.html">5. მცირე შეჯამება</a>
+      <a href="https://dshubitidze.github.io/electron/kondensatori.html">6 .კონდენსატორი</a>
+      <a href="https://dshubitidze.github.io/electron/induqtivoba.html">7. ინდუქტივობა</a>
+      <a href="https://dshubitidze.github.io/electron/diodi.html">8. დიოდი</a>
+      <a href="https://dshubitidze.github.io/electron/tranzistori.html">9. ტრანზისტორი</a>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; სარჩევი</span>
+    <br />
+    <br />
+    <h2> მთავარი პრინციპები </h2>
+    <br />
+    <!-- პოსტი -->
+  <span style="text-align: justify;">&nbsp; &nbsp; &nbsp; &nbsp; ყოველთვის უნდა გვახსოვდეს ერთი მთავარი პრინციპი! სისტემაში მოძრავი წყლის ოდენობა არ იცვლება, წყალი ცირკულირებს მილებში დანაკარგის გარეშე. რამდენი წყალიც შევა რაიმე სისტემაში, იმდენივე უნდა გამოვიდეს.</span>
+  <br>
+  <br>
+  <div style="text-align: justify;">&nbsp; &nbsp; რაიმე სქემის აწყობისას ხდება სხვადასხვა მოწყობილობების შეერთება მილებით (მავთულებით), სიმარტივისთვის ჩავთვალოთ რომ შემაერთებელი მილები იმდენად დიდია რომ მათში წყალი მიედინება თავისუფლად, ხახუნის გარეშე და შესაბამისად წნევის ვარდნა არ ხდება.</div>
+  <div style="text-align: justify;">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</div>
+  <div style="text-align: justify;">
+    <a href="https://dshubitidze.github.io/electron/upload/serial_sample.gif" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;">
+      <img border="0" height="123" src="https://dshubitidze.github.io/electron/upload/serial_sample.gif" width="320">
+    </a>&nbsp;განვიხილოთ მოწყობილობების <span style="color: #351c75; font-weight: bold;">
+      <i>მიმდვერობითი ჩართვა</i>
+    </span>. სურათზე ვხედავთ D1 და D2 მოწყობილობებს. ორივე მოწყობილობა ჩართულია ერთ მილზე თანამიმდევრობით, ასეთ ჩართვას ეწოდება მიმდევრობითი. თითოეულ მოწყობილობაში გადის გაკრვეული რაოდენობის წყალი გარკვეული სიჩქარით ანუ დენის ძალით, შესაბამისად I1 და I2, მაგრამ რამდენი წყალიც შედის პირველ მოწყობილობაში ზუსტად იმდენი გავა მეორეში, ეს ნიშნავს რომ ორივეში გადის ერთი და იგივე რაოდენობის წყალი ერთი და იგივე სიჩქარით, ესე იგი ორივეში დენის ძალა ტოლია : <b>I1 = I2</b> . &nbsp;თუ გავზომავთ წნევებს P1, P2 წერტილებში, მაშინ შეგვიძლია დავითვალოთ <b>
+      <span style="color: #351c75;">
+        <i>წნევის ვარდნა (ძაბვის ვარდნა)</i>
+      </span>
+    </b> D1 მოწყობილობაზე&nbsp;
+  </div>
+  <div style="text-align: justify;">U1 = P1 - P2 , ანალოგიურად მეორე მოწყობილობაზე U2 = &nbsp;P3 - P4 . თუ გვინდა გავიგოთ ძაბვის ვარდნა ორივე მოწყობილობაზე ერთად, მაშინ ვიყენებთ ფორმულას:</div>
+  <div style="text-align: justify;">U = P1 - P4 , ამავე დროს დავაკვირდეთ რომ P2 = P3 , იმიტომ რომ ეს წერტილები შეერთებულია მსხვილი მილით. გამოდის რომ U1 + U2 = P1 - P2 + P3 - P4 = P1 - P4 = U .</div>
+  <div style="text-align: justify;">ესე იგი <b> U = U1 + U2</b>. დასკვნა : <b>მიმდევრობით ჩართულ მოწყობილობებში გადის ერთი და იგივე დენი ხოლო მათზე ძაბვის ვარდნების ჯამი არის ორივეზე ერთად ძაბვის ვარდნის ტოლი.</b>
+  </div>
+  <div style="text-align: justify;">&nbsp; &nbsp; &nbsp;&nbsp;</div>
+  <div style="text-align: justify;">
+    <a href="https://dshubitidze.github.io/electron/upload/paralel_sample.gif" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;">
+      <img border="0" height="283" src="https://dshubitidze.github.io/electron/upload/paralel_sample.gif" width="320">
+    </a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <b>
+      <span style="color: #351c75;">&nbsp; <i>პარალელური ჩართვის</i>
+      </span>
+    </b> დროს მოწყობილობები ინაწილებენ საწყის მილში გამავალ წყალს. შესაბამისად ორივეში ერთად გამავალი წყლის მოცულობა არის ტოლი საერთო მილიდან შემავალი წყლის მოცულობის. ანუ მათში ნაწილდება დენი :
+  </div>
+  <div style="text-align: justify;">
+    <b>I = I1 + I2</b>
+  </div>
+  <div style="text-align: justify;">D1 მოწყობილობის შესასვლელზე გვაქვს წნევა &nbsp;P1, &nbsp;ხოლო გამოსასვლელზე - P2, ესე იგი მასზე ძაბვის ვარდნა არის:</div>
+  <div style="text-align: justify;">U1 = P1 - P2, ანალოგიურად D2 - ზე :</div>
+  <div style="text-align: justify;">U2 = P3 - P4. მაგრამ P1 და P3 წერტილები შეერთებულია მსხვილი მილით, ესე იგი ამ წერტილებში წნევა ტოლია:</div>
+  <div style="text-align: justify;">P1 = P3, ანალოგიურად P2 = P4, გამოდის რომ:&nbsp;</div>
+  <div style="text-align: justify;">U1 = P1 - P2 = P3 - P4 = U2, ანუ ძაბვები ტოლია: <b>U = U1 = U2 </b>, აქ U აღნიშნავს წნევათა სხვაობას (ძაბვის ვარდნას) ორივე მოწყობილობაზე ერთად. დასკვნა : <b>პარალელურად ჩართულ მოწყობილობებში გამავალი დენის ძალების ჯამი ტოლია ორივეში ერთად გავალი დენის ძალისა ხოლო მათზე ძაბვათა ვარდნები ერთმანეთის ტოლია.</b>
+  </div>
+  <div style="text-align: justify;">
+    <br>
+  </div>
+  <div style="text-align: justify;">
+    <br>
+  </div>
+    <!-- /პოსტი -->
+    <script>
+      function openNav() {
+        document.getElementById("sarchevi").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("sarchevi").style.width = "0";
+      }
+    </script>
+  </body>
+</html>
