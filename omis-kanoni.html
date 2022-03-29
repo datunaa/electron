@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>electrON - ომის კანონი</title>
+    <meta property="og:title" content="electrON - ომის კანონი" />
+    <meta property="og:description" content="ელექტრონიკის გაკვეთილები" />
+    <meta property="og:url" content="https://dshubitidze.github.io/electron" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://dshubitidze.github.io/electron/upload/electron.jpg" />
+    <meta property="og:site_name" content="electrON - ომის კანონი" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        font-family: "Lato", sans-serif;
+      }
+
+      .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+
+      @media screen and (max-height: 450px) {
+        .sidenav {
+          padding-top: 15px;
+        }
+
+        .sidenav a {
+          font-size: 18px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="sarchevi" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="https://dshubitidze.github.io/electron/index.html">1. დენი და ძაბვა</a>
+      <a href="https://dshubitidze.github.io/electron/mtavari-principi.html">2. მთავარი პრინციპები</a>
+      <a href="https://dshubitidze.github.io/electron/kvebis-wyaro.html">3. კვების წყარო</a>
+      <a href="https://dshubitidze.github.io/electron/omis-kanoni.html">4. ომის კანონი</a>
+      <a href="https://dshubitidze.github.io/electron/mcire-shejameba.html">5. მცირე შეჯამება</a>
+      <a href="https://dshubitidze.github.io/electron/kondensatori.html">6 .კონდენსატორი</a>
+      <a href="https://dshubitidze.github.io/electron/induqtivoba.html">7. ინდუქტივობა</a>
+      <a href="https://dshubitidze.github.io/electron/diodi.html">8. დიოდი</a>
+      <a href="https://dshubitidze.github.io/electron/tranzistori.html">9. ტრანზისტორი</a>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; სარჩევი</span>
+    <br />
+    <br />
+    <h2> ომის კანონი </h2>
+    <br />
+    <!-- პოსტი -->
+    
+    
+  <div style="text-align: justify;">&nbsp; &nbsp; წინა პოსტში განვიხილეთ დენის და ძაბვის განმარტება. ეხლა უკვე შეგვიძლია გადავიდეთ პირველ ელექტრონულ მოწყობილობაზე, ეს არის&nbsp; <b>
+      <span style="color: #351c75;">წინაღობა (რეზისტორი)</span>
+    </b>
+  </div>
+  <div style="text-align: justify;">
+    <span style="color: #351c75; font-weight: bold;">&nbsp; &nbsp; &nbsp;&nbsp;</span>წყალი მოძრაობს მილებში გარკვეული წნევით (ძაბვა), მილში გავლისას წყლის წნევა ეცემა წყლის და მილის კედლებს შორის ხახუნის გამო. რაც უფრო წვრილია მილი, მით უფრო მეტია ხახუნის ძალა და მით უფრო ნელა გადის მასში წყალი, შესაბამისად მით უფრო ნაკლები იქნება დენის ძალა. მეორეს მხრივ რაც უფრო მაღალია წნევა (ძაბვა) მილის შესასვლელზე მით უფრო მეტი იქნება წყლის სიჩქარე მილში, ესე იგი წვრილი მილი შეგვიძლია დავაკომპენსიროთ მაღალი ძნევით. მილის სისქე და წნევა განსაზღვრავენ მილში გამავალი წყლის სიჩქარეს.&nbsp; <i>
+      <span style="color: #351c75;">განმარტება: მილის თვისებას შეანელოს წყალი და შეამციროს მისი წნევა ეწოდება&nbsp; <b>წინაღობა</b>&nbsp;და იზომება&nbsp; <b>ომებში (Ohm)</b>
+      </span>
+    </i>.&nbsp; <i>
+      <span style="color: #351c75;">1 ომი ისეთი წინააღობის მილია რომელშიც 1 ამპერი დენის (დინების სიჩაქრის) გასვლისას ძაბვის (წნევის) ვარდნა ხდება 1 ვოლტით.</span>
+    </i>
+  </div>
+  <div style="text-align: justify;">&nbsp; &nbsp; &nbsp; &nbsp; წარმოვიდგინოთ რომ გვაქვს 1 ომი წინაღობის მქონე მილი, რომელშიც გადის წყალი 1 ამპერი სიჩაქრით, შესაბამისად ამ დროს წნევა მის შესასვლელზე თუ 1 ვოლტია, გამოსასვლელზე უნდა იყოს 0. თუ მოვუმატებთ წნევას შესასვლელზე, 2 ვოლტამზე, მაშინ მილში წყალი გაივლის 2-ჯერ ჩქარა - 2 ამპერით. თუ ავიღებთ სხვა მილს რომელიც 2-ჯერ ვიწრია და მისი წინაღობა არის 2 ომი, მაშინ იგივე 1 ვოლტი ძაბვის (წნევის) დროს მასში გაივლის 2-ჯერ ნაკლები წყალი - 0.5 ამპერი. ხოლო 2 ვოლტი წნევის დროს გაივლის 1 ამპერი სიჩქარით. <br>
+    <a href="https://dshubitidze.github.io/electron/upload/OhmRule.png" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;">
+      <img border="0" src="https://dshubitidze.github.io/electron/upload/OhmRule.png">
+    </a>ეხლა უკვე შეგვიძლია დავწეროთ მარტივი ფორმულა, თუ აღვნიშვნავთ ძაბვას U-თი, დენს I-თი, &nbsp;ხოლო წინაღობას R-ით, მაშინ გვექნება&nbsp;I = U / R. ამ მარტივი განტოლებიდან შეგვიძლია გამოვიყვანოთ ასევე კიდე ორი მარტივი ფორმულა U = I x R და R = U / I . ესე ეს 3 სიდიდე - დენი, ძაბვა და წინაღობა დამოკიდებული არიან ერთმანეთზე და თუ ვიცით ნებისმიერი ორი, შეგივძლია გამოვიანგარიშოთ მესამე. მაგალითად თუ ვიცით რომ მილში გადის 2 ამპერი დენი და ამ დროს წნევა არის 10 ვოლტი, მაშინ მილის წინაღობა იქნება 5 ომი (5=10/2). <br>
+    <a href="https://dshubitidze.github.io/electron/upload/resistor_schem.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;">
+      <img border="0" height="136" src="https://dshubitidze.github.io/electron/upload/resistor_schem.png" width="200">
+    </a>&nbsp;&nbsp;წინააღობის სიდიდე აღინიშნება ბერძნული ომეგა ასოთი&nbsp; <span style="background-color: white; font-family: sans-serif; line-height: 19px; text-align: -webkit-auto;">
+      <span style="color: #351c75; font-size: 13px; font-weight: bold;">Ω</span>
+      <span style="font-size: x-small;">.&nbsp;</span>წინაღობა ანუ რეზისტორი სქემებზე აღინიშნება ძირითადად 2 სიმბოლოთი. R2 აღნიშვნა ძირითადად გამოიყენება ამერიკაში ხოლო R1 საფრანგეთში და რუსეთში.&nbsp; </span>
+  </div>
+  <div style="text-align: justify;">მომავალში სქემის დახატვისას ჩვენ აღვნიშნავთ მავთულებს ხაზის საშუალებით და რეზისტორს ფრანგული სიმბოლოთი. გავაკეთოთ დაშვება რომ მავთულს არა აქვს წინაღობა, ანუ არ აფერხებს დენს - ანუ შესაბამისი მილი იმდენად მსხვილია რომ წყალი შიგ მოძროაბს შეფერხების და ხახუნის გარეშე. ხოლო რეზისტორი არის წვრილი მილის მონაკვეთი, სადაც ხდება წყლის მოძრაობის შეფერხება მილის სისქის ანუ წინაღობის შესაბამისად. <br>
+    <br>
+  </div>
+  <div style="text-align: justify;">
+    <div class="separator" style="clear: both; text-align: center;">
+      <a href="https://dshubitidze.github.io/electron/upload/200px-Resistor.jpg" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;">
+        <img border="0" src="https://dshubitidze.github.io/electron/upload/200px-Resistor.jpg">
+      </a>
+    </div>
+    <div style="text-align: right;">რეზისტორების უმეტესობა გამოიყურება ასე&nbsp;</div>
+    <br>
+    <br>
+    <br>
+  </div>
+    
+    <!-- /პოსტი -->
+    <script>
+      function openNav() {
+        document.getElementById("sarchevi").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("sarchevi").style.width = "0";
+      }
+    </script>
+  </body>
+</html>
