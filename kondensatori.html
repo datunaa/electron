@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>electrON - კონდენსატორი</title>
+    <meta property="og:title" content="electrON - კონდენსატორი" />
+    <meta property="og:description" content="ელექტრონიკის გაკვეთილები" />
+    <meta property="og:url" content="https://dshubitidze.github.io/electron" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://dshubitidze.github.io/electron/upload/electron.jpg" />
+    <meta property="og:site_name" content="electrON - კონდენსატორი" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        font-family: "Lato", sans-serif;
+      }
+
+      .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+
+      @media screen and (max-height: 450px) {
+        .sidenav {
+          padding-top: 15px;
+        }
+
+        .sidenav a {
+          font-size: 18px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="sarchevi" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="https://dshubitidze.github.io/electron/index.html">1. დენი და ძაბვა</a>
+      <a href="https://dshubitidze.github.io/electron/mtavari-principi.html">2. მთავარი პრინციპები</a>
+      <a href="https://dshubitidze.github.io/electron/kvebis-wyaro.html">3. კვების წყარო</a>
+      <a href="https://dshubitidze.github.io/electron/omis-kanoni.html">4. ომის კანონი</a>
+      <a href="https://dshubitidze.github.io/electron/mcire-shejameba.html">5. მცირე შეჯამება</a>
+      <a href="https://dshubitidze.github.io/electron/kondensatori.html">6 .კონდენსატორი</a>
+      <a href="https://dshubitidze.github.io/electron/induqtivoba.html">7. ინდუქტივობა</a>
+      <a href="https://dshubitidze.github.io/electron/diodi.html">8. დიოდი</a>
+      <a href="https://dshubitidze.github.io/electron/tranzistori.html">9. ტრანზისტორი</a>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; სარჩევი</span>
+    <br />
+    <br />
+    <h2> კონდენსატორი </h2>
+    <br />
+    <!-- პოსტი -->
+    
+    
+  <div dir="ltr" style="text-align: left;" trbidi="on"> &nbsp; &nbsp; &nbsp;წარმოიდგინეთ წყლის დახურული ავზი რომელსაც შუაში აქვს გამყოფი ელასტიური მემბრანა. ეს მემბრანა წყლის ავზს ყოფს 2 იზოლირებულ ნაწილად და წყალი ვერ გადადის ერთი ნაწილიდან მეორეში, ავზს აქვს 2 შესასვლელი თითოეულ ნაწილში. რა მოხდება თუ ასეთ ავზს მივაერთებთ კვების წყაროზე (წყალსაქაჩზე). <br>
+    <div class="separator" style="clear: both; text-align: center;">
+      <a href="https://dshubitidze.github.io/electron/upload/capacitor1.gif" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;">
+        <img border="0" height="283" src="https://dshubitidze.github.io/electron/upload/capacitor1.gif" width="320">
+      </a>
+    </div>
+    <br>
+    <div style="text-align: justify;"> როდესაც წყალსაქაჩი ამუშავდება, ავზის ერთ ბოლოზე მოიმატებს წნევა, ხოლო მეორეზე მოიკლებს, ამიტომ წყალი მიაწვება ელასტიურ მემბრანას და შეზნიქავს მას. შესაბამისად ავზის ერთ ნაწილში წყალი შევა ხოლო მეორე ნაწილიდან გამოვა. ამ დროს შემავალ ხვრელთან წყლის წნევა იმატებს ხოლო გამომავალთან იკლებს. ხოლო თავად ავზზე წნევების (პოტენციალთა) სხვაობა ანუ ძაბვა:</div>
+    <div style="text-align: justify;"> U = P1 - P2 იმატებს. რაღაც დროის მერე მემბრანა ისე დაიჭიმება რომ წყალსაქაჩი მეტად ვეღარ შეძლებს მის შეზნექვას და ამ დროს დინება შეწყდება. ამ დროს ავზზე წნევების სხვაობა (ძაბვა) ტოლია კვების წყაროზე წნევების სხვაობის (ძაბვის). <span style="color: #351c75;">არ უნდა დაგაბნიოთ იმან რომ წნევების სხვაობა გამოიყენება როგორც ძაბვის მაჩვენებელი. წყლის მოძრაობის სიჩქარე დამოკიდებულია არა უბრალოდ ერთ მხარეზე წნევაზე არამედ წნევების სხვაობაზე, ამიტომ როგორიც არ უნდა იყოს წნევები ავზის შესასვლელზე და გამოსასვლელზე, მთავარია მათ შორის სხვაობა რაა, ანუ ძაბვა არაა. ანუ თუ დავუშვათ P1 = 4V და P2 = 0V, ეფექტი იქნება ზუსტად იგივე როცა&nbsp;P1 = 2V და P2 = -2V ან როცა&nbsp;P1 = 3V და P2 = -1V იმიტომ რომ ყველა ამ შემთხვევაში P1 = P2 = 4V. ეს პრინციპი გამოიყენება ყოველთვის როცა ლაპარაკია ძაბვაზე ან ძაბვის ვარდნაზე. ამიტომ ვოლტმეტრს აქვს 2 კონტაქტი, იგი ზომავს პოტენციალთა (წნევების) სხვაობას 2 წერტილს შორის და არა კონკრეტული წერტილის ძაბვას (წნევას).</span>
+    </div>
+    <div style="text-align: justify;"> &nbsp; &nbsp; ამ ავზს ვუწოდოთ <i>
+        <b>
+          <span style="color: #351c75;">კონდესატორი (Capacitor)</span>
+        </b>
+      </i>. მიაქციეთ ყურადღება იმას რომ თუ ავზს მხოლოდ ერთი ხვრელით მიუერთებთ მილს, მაშინ იგი არ იმუშავებს იმიტომ რომ წყლის დინების წრედი არ შეიკვრება, წყალსაქაჩმა რომ იმუშავოს მანდ უნდა გადაქაჩოს წყალი ერთი ნაწილიდან მეორეში, ამიტომ კონდესატორი წრედში ირთვება 2 კონტაქტით.&nbsp; </div>
+    <div style="text-align: justify;"> &nbsp; &nbsp; როგორც უკვე ვთვქით გარკვეულ ეტაპზე წყლის დინება ავზში შეწყდება, ამ მდგომარეობას ქვია დამუხტული მდგომარეობა, უფრო მეტი წყალი რომ შევიდეს ავზში, საჭიროა მოვუმატოთ წნევა ანუ ძაბვა. ესე იგი რაც მეტია წნევა, მით მეტი წყალი შევა ავზში, მეორეს მხრივ რაც უფრო ელასტიურია მემბრანა, მით ნაკლები წნევაა საჭირო ავზში წყლის შესაშვებად. მემბრანის ელასტიურობა განსზაღვრავს კონდესატორის მთავარ მახასიათებელს: <b style="color: #351c75;">ტევადობას (Capacity) </b>
+      <span style="color: #351c75;">აღინიშნება <b>C</b> სიმბოლოთი </span>. ტევადობა იზომება ფარადებში და აღინიშნება სიმბოლოთი F.
+    </div>
+    <div style="text-align: justify;">
+      <span style="color: #351c75; font-size: large; font-weight: bold;">C = Q / V </span>სადაც Q არის წყლის რაოდენობა რომელიც შევა კონდენსატორში V ძაბვის დროს. რაც მეტ წყალს შეუშვებს კონდესატორი გარკვეულ ძაბვაზე, მით უფრო მეტი ტევადობა აქვს მას.&nbsp;
+    </div>
+    <div style="text-align: justify;">
+      <br>
+      <div class="separator" style="clear: both; text-align: center;">
+        <a href="https://dshubitidze.github.io/electron/upload/capacitor4.gif" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;">
+          <img border="0" height="283" src="https://dshubitidze.github.io/electron/upload/capacitor4.gif" width="320">
+        </a>
+      </div> &nbsp; &nbsp; &nbsp; &nbsp;ლოგიკურია ვიფიქროთ რომ ავზის მემბრანა ნებისმიერ წნევას ვერ გაუძლებს, მას გაჩნია &nbsp;ზღვრული წნევა, რომელზე იგი შეიძლება გასკდეს. ანუ კონდენსატორს აქვს კიდე ერთი პარამეტრი - <b>
+        <span style="color: #351c75;">მაქსიმალური ძაბვა</span>
+      </b>. ამ ძაბვის გადამეტების შემდეგ შესაძლოა წყალმა გახეთქოს მემბრანა, ამ მოვლენას ეძახიან გარღვევას. კონდესატორის გარღვევის ძაბვა არის მაქსიმალური დასაშვები ძაბვა რომელზეც შეუძლია იმუშაოს კონდესატორმა. ჩვეულებრივ კონდესატორის ორივე მხარე არის ერთნაერი, ანუ შესაძლებელია ნებისმიერი მიმართულებით წყლის ჩატუმბვა მასში. თუმცა ზოგიერთი ავზის მემბრანა სპეციალურად ისეა მოწყობილი რომ იგი მხოლოდ ერთ მხარეს იზნიქება, ასეთ კონდესატორებს ელექტროლიტურს უწოდებენ და მათ გააჩნიათ ჩართვის პოლარობა, ანუ მასში წყლის (დენის) ჩაქაჩვა მხოლოდ ერთი მიმართულებით შეიძლება, შესაბამისად ასეთი კონდენსატორის ერთი კონტაქტი კვების წყაროს "+"-ზე უნდა ჩაირთოს. <span style="color: #666666; font-size: xx-small;">&nbsp;ელეტროლიტური კონდესატორები როგორც წესი უფრო მცირეა ზომით, ამიტომ თუ ვიცით რომ კონდესატორზე მხოლოდ ერთი პოლარობის ძაბვა იქნება მიწოდებული, მაშინ შეგვიძლია გამოვიყენოთ ისინი. თუმცა ელეტროლიტების მემბრანა უფრო "ნელია" და ზოგ შემთხვევაში ისინი გამოუსადეგარია.</span>
+      <br>
+      <span style="color: #666666; font-size: xx-small;">
+        <br>
+      </span>
+      <br>
+      <div class="separator" style="clear: both; text-align: center;">
+        <a href="https://dshubitidze.github.io/electron/upload/Capasitor_simbol.jpg" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;">
+          <img border="0" src="https://dshubitidze.github.io/electron/upload/Capasitor_simbol.jpg">
+        </a>
+      </div>
+      <a href="https://dshubitidze.github.io/electron/upload/250px-Photo-SMDcapacitors.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;">
+        <br>
+      </a>
+      <br> სქემაზე კონდესატორი აღინიშნება ასე, ქვედა ნახატი შეესაბამება ელექტროლიტს. &nbsp;კონდესატორების <b>პარალელურად ჩართვისას</b> ორივე ავზი მუშაობდ როგორც ერთი დიდი საერთო მემბრანით, ამ დროს მემბრანის ელასტიურობა იგივეა ხოლო ავზის მოცულუბა იზრდება, ესე იგი უფრო მეტ წყალს დაიტევენ იგივე წნევის დროს, აქედან გამომდინარე ლოგიკურია ვიგულისხმოთ რომ პარალელურად ჩართული კონდენსატორების ტევადობა იკრიბება <br>
+      <span style="color: #351c75; font-weight: bold;">C = C1 + C2. </span>
+      <span style="color: #351c75;">ამ დროს გარღვევის ძაბვა იქნება ამ ორიდან მინიმალურის გარღვევის ძაბვა.</span>
+      <span style="color: #351c75; font-weight: bold;">&nbsp;</span>
+      <br> თუ ორ ერთნაერ კონდესატორს შევაერთებთ <b>მიმდევრობით</b> მაშინ ორივე ერთად იმუშავებს როგორც კონდესატორი რომელსაც აქვს ავზი ისეთივე მოცულობით როგორც თითოეულს (და არა ორმაგი, იმიტომ რომ წყალის გადადინება შეზღუდულია ავზის მემბრანით, როცა პირველი ავზის მემბრანა გაჩერდება, მაშინ გაჩერდება წყლის დინება მეორე ავზშიც). ხოლო ორი მემბრანა ჯამში იმუშავებს როგორც ერთი მემბრანა ორჯერ სქელი კედლით და შესაბამისად ორჯერ მეტი წნევა იქნება საჭირო, ესე იგი ტევადობა შემცირდება ორჯერ. მიმდევრობით ჩართული კონდესატროების საერთო ტევადობა ითვლება ფორმულით: <br>
+      <b style="color: #351c75;">C = C1 x C2 / ( C1 + C2 ) &nbsp;</b>
+      <span style="color: #666666; font-size: xx-small;">(შეადარეთ პარალელურად ჩართული რეზოსტორების ფორმულას)</span>
+      <span style="color: #351c75;">.</span>
+      <b style="color: #351c75;"></b>
+      <span style="color: #351c75;">ამ დროს საერთო გარღვევის ძაბვა ტოლია თითოეულის გარღვევის ძაბვების ჯამის.&nbsp;</span>
+      <br>
+      <span style="color: #666666; font-size: xx-small;">ამ ფორმულების მათემატიკურ გამოყვანას აქ არ განვიხილავთ, რადგან ჩვენ მხოლოდ ელექტრონიკის საწყისებს ვსწავლობთ.</span>
+      <br>
+      <a href="https://dshubitidze.github.io/electron/upload/250px-Photo-SMDcapacitors.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;">
+        <img border="0" src="https://dshubitidze.github.io/electron/upload/250px-Photo-SMDcapacitors.jpg">
+      </a>
+      <br>
+      <br>
+      <br>
+      <br> კონდენსატორები როგორც წესი გამოიყურებიან ასე <br>
+      <br>
+    </div>
+  </div>
+    
+    <!-- /პოსტი -->
+    <script>
+      function openNav() {
+        document.getElementById("sarchevi").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("sarchevi").style.width = "0";
+      }
+    </script>
+  </body>
+</html>
