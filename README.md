@@ -1,2 +1,2 @@
 # electron
-ელექტრონიკის გაკვეთილები -> https://dshubitidze.github.io/electron/
+ელექტრონიკის გაკვეთილები -> https://datunaa.github.io/electron/
